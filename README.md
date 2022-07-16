@@ -7,3 +7,5 @@
 <h1>Blur Image - Html/Css and Javascript</h1>
 <p>Apply a blur effect to the image with range slider</p>
  
+ 
+ <h3 align="left">Preview</h3> <a href="https://vinithatech.github.io/blur-image-slider/blur-image-slider.html" target="_blank" rel="noreferrer">https://vinithatech.github.io/blur-image-slider/blur-image-slider.html</a> 
