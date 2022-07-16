@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: cursive;
+      }
+      img {
+        filter: blur(0px);
+      }
+      .slider__box {
+        margin-bottom: 20px;
+      }
+      .value__box {
+        padding: 6px 20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        background-color: aquamarine;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Apply a blur effect to the image:</p>
+
+    <div class="slider__box">
+      <label> Blur </label>
+
+      <input
+        type="range"
+        id="slider"
+        name="slider"
+        min="0"
+        max="10"
+        oninput="changeBlur(event)"
+        value="0"
+      />
+      <span class="value__box" id="slider-value">0</span>
+    </div>
+
+    <img
+      src="https://i.pinimg.com/originals/31/38/11/313811274a28746379ebf4d4fcf7842b.jpg"
+      alt="Pineapple"
+      width="300"
+      height="300"
+      id="image"
+    />
+
+    <script>
+      function changeBlur(e) {
+        document.getElementById(
+          "image"
+        ).style.filter = `blur(${e.target.value}px)`;
+        document.getElementById("slider-value").innerHTML = e.target.value;
+      }
+    </script>
+  </body>
+</html>
